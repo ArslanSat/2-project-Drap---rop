@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: #e5e5e5; */
+  background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #6a646d);
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(49, 35, 110, 0.36);
+  border-radius: 20px;
+  border: 3px solid rgb(107, 91, 91);
+  padding: 0.8rem 1rem;
+  color: #ffffff;
+  text-align: center;
+  border: solid 3px rgb(107, 91, 91);;
+  /* outline: solid 3px rgb(107, 91, 91); */
+
+  
+}
+
+.item {
+  width: 150px;
+  height: 66px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(49, 35, 110, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: rgb(107, 91, 91);
+  text-align: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+  box-shadow: none;
+}
+
+.placeholder {
+  width: 150px;
+  height: 66px;
+}
+
+.start {
+  background: linear-gradient(90deg, #3b3838 0%, #56748b 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #56748b 0%, #6b7e7c 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #6b7e7c 0%, #698b9c 100%);
+}
+
+
+.hold {
+  border: solid 3px #474444;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border: 3px solid #fff;
+  border-radius: 20px;
+  
+}
